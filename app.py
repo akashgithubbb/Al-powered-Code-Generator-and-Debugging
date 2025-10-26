@@ -5,7 +5,7 @@ import requests
 st.set_page_config(page_title="Code Llama Assistant", page_icon="🦙", layout="wide")
 
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": "Hi! I'm powered by Groq AI. Describe what code you need, and I'll generate it for you."}]
+    st.session_state.messages = [{"role": "assistant", "content": "Hi! I'm Deadpool. Describe what code you need, and I'll generate it for you."}]
 
 st.title("🦙 Code Generator ")
 st.caption("Powered by Groq AI - Free & Fast")
