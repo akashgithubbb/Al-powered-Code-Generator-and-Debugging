@@ -13,7 +13,7 @@ st.caption("Powered by Groq AI - Free & Fast")
 with st.sidebar:
     st.header("⚙️ Settings")
     st.subheader("API Configuration")
-    api_key = st.text_input("Groq API Key", type="Password", placeholder="Paste your Groq API key here")
+    api_key = st.text_input("Groq API Key", type="password", placeholder="Paste your Groq API key here")
     st.subheader("Model Parameters")
     temperature = st.slider("Temperature", 0.0, 2.0, 0.7, 0.1)
     max_tokens = st.slider("Max Tokens", 100, 4000, 2000, 100)
