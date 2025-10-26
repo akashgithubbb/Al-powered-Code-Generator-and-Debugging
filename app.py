@@ -7,22 +7,22 @@ st.set_page_config(page_title="Code Llama Assistant", page_icon="🦙", layout="
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "Hi! I'm powered by Groq AI. Describe what code you need, and I'll generate it for you."}]
 
-st.title("🦙 Code Generator with Groq")
+st.title("🦙 Code Generator ")
 st.caption("Powered by Groq AI - Free & Fast")
 
 with st.sidebar:
     st.header("⚙️ Settings")
     st.subheader("API Configuration")
-    api_key = st.text_input("Groq API Key", type="password", placeholder="Paste your Groq API key here")
+    api_key = st.text_input("Groq API Key", type="Password", placeholder="Paste your Groq API key here")
     st.subheader("Model Parameters")
     temperature = st.slider("Temperature", 0.0, 2.0, 0.7, 0.1)
     max_tokens = st.slider("Max Tokens", 100, 4000, 2000, 100)
     st.divider()
     if st.button("🗑️ Clear Chat", use_container_width=True):
-        st.session_state.messages = [{"role": "assistant", "content": "Hi! I'm powered by Groq AI. Describe what code you need, and I'll generate it for you."}]
+        st.session_state.messages = [{"role": "assistant", "content": "Hi! I'm Deadpool. Describe what code you need, and I'll generate it for you."}]
         st.rerun()
     st.divider()
-    st.caption("Built for AI Engineers")
+    st.caption("Built By Akash Chaudhary")
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
